@@ -1,0 +1,11 @@
+framework module BasisPay {
+  umbrella header "BasisPay.h"
+
+  export *
+  module * { export * }
+}
+
+module BasisPay.Swift {
+    header "BasisPay-Swift.h"
+    requires objc
+}

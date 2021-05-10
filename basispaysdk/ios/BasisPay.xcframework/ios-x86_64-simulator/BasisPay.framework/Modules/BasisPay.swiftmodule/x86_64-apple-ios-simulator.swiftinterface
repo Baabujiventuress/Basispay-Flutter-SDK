@@ -1,0 +1,74 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BasisPay
+@_exported import BasisPay
+import Foundation
+import Swift
+import UIKit
+import WebKit
+public protocol PaymentGatewayDelegate {
+  func onPaymentSucess(response: BasisPay.BasisPaymentResponse)
+  func onPaymentFailure(response: BasisPay.BasisPaymentResponse)
+}
+public enum UrlEndpoint : Swift.String {
+  case Live
+  case Testing
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc open class PaymentGatewayController : UIKit.UIViewController {
+  @objc open var isResponseDataAvailable: Swift.Bool
+  public var paymentDefaults: BasisPay.PaymentDefaults!
+  public var delegate: BasisPay.PaymentGatewayDelegate?
+  @objc dynamic public init()
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open func didReceiveMemoryWarning()
+  @objc open func setInputDictionary(inputDictionary: Foundation.NSDictionary)
+  @objc open func isResponseAvailable() -> Swift.Bool
+  @objc open func getResponseData() -> Foundation.NSDictionary
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension PaymentGatewayController : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+public struct PaymentDefaults {
+  public var apiKey: Swift.String!
+  public var saltKey: Swift.String!
+  public var returnUrl: Swift.String!
+  public var endPoint: BasisPay.UrlEndpoint
+  public init(apiKey: Swift.String, saltKey: Swift.String, returnUrl: Swift.String, endPoint: BasisPay.UrlEndpoint)
+}
+public struct BasisPaymentResponse {
+  public var address_line_1: Swift.String
+  public var address_line_2: Swift.String
+  public var amount: Swift.String
+  public var cardmasked: Swift.String
+  public var city: Swift.String
+  public var country: Swift.String
+  public var currency: Swift.String
+  public var description: Swift.String
+  public var email: Swift.String
+  public var error_desc: Swift.String
+  public var name: Swift.String
+  public var order_id: Swift.String
+  public var payment_channel: Swift.String
+  public var payment_datetime: Swift.String
+  public var payment_mode: Swift.String
+  public var phone: Swift.String
+  public var response_code: Swift.String
+  public var response_message: Swift.String
+  public var state: Swift.String
+  public var transaction_id: Swift.String
+  public var zip_code: Swift.String
+  public var strCategory: Swift.String
+  public init(dict: [Swift.String : Any])
+}
+extension BasisPay.UrlEndpoint : Swift.Equatable {}
+extension BasisPay.UrlEndpoint : Swift.Hashable {}
+extension BasisPay.UrlEndpoint : Swift.RawRepresentable {}
