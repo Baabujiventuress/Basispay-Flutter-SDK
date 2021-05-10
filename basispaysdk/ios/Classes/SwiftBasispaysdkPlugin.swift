@@ -35,8 +35,12 @@ public class SwiftBasispaysdkPlugin: NSObject, FlutterPlugin {
 
                   return
               }
+            var urlEndPoint:UrlEndpoint = .Testing
+            if !endPoint {
+                urlEndPoint = .Live
+            }
 
-              startTransaction(apiKey: apiKey, saltKey: saltKey, returnUrl: returnUrl, endPoint: .Testing, paymentRequestDictionary: payDict, callBack: result)
+              startTransaction(apiKey: apiKey, saltKey: saltKey, returnUrl: returnUrl, endPoint: urlEndPoint, paymentRequestDictionary: payDict, callBack: result)
 
           }else {
               result("Technical Error")

@@ -1,3 +1,4 @@
-## 0.0.1
+ ## 1.0.0
+ 
+ * Update: BasisPay as a payment gateway in your flutter app.
 
-* TODO: Describe initial release.

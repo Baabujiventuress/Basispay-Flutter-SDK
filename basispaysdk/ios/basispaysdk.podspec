@@ -11,11 +11,8 @@ Flutter SDK kit for payment gateway transactions within India
                        DESC
    s.homepage         = 'https://github.com/Baabujiventuress/fluttersdk'
        s.license          = { :file => '../LICENSE' }
-       s.author           = { 'Basis Pay' }
-       s.source           = {
-                                :git => "https://github.com/Baabujiventuress/fluttersdk.git",
-                                :tag => "#{s.version}"
-                              }
+       s.author           = { 'Your Company' => 'email@example.com' }
+       s.source           = { :path => '.' }
 
        s.source_files = 'Classes/**/*'
        s.dependency 'Flutter'

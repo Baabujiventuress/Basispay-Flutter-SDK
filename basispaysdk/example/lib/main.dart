@@ -24,16 +24,16 @@ class _MyAppState extends State<MyApp> {
       "orderId": "8349574023489",
       "amount": "6000",
       "currency": "INR",
-      "description": "Book Fuel",
-      "name": "Naveen",
-      "email": "nvnkumar398@gmail.com",
-      "phone": "8248350384",
-      "addressLine1": "no 28/39",
-      "addressLine2": "no 28/39",
-      "city": "Chennai",
-      "state": "TamilNadu",
-      "country": "India",
-      "zipCode": "600014",
+      "description": "YYYYYY",
+      "name": "XXXXXXX",
+      "email": "YYYYYYY",
+      "phone": "ZZZZZZZZ",
+      "addressLine1": "XXXXX",
+      "addressLine2": "XXXXX",
+      "city": "XXXXX",
+      "state": "YYYYY",
+      "country": "XXXXX",
+      "zipCode": "YYYYY",
       "udf1": "udf1",
       "udf2": "udf2",
       "udf3": "udf3",
@@ -46,8 +46,7 @@ class _MyAppState extends State<MyApp> {
           "69ecafcf78912a3f57a00f0e78ea4194efcd7d24",
           "http://167.71.235.104:8080/cinchfuel/order/pgreturn",
           true,
-          paymentRequestDictionary,
-          false);
+          paymentRequestDictionary);
       response.then((value) {
         print(value);
       }).catchError((onError) {
