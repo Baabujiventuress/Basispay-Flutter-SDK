@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:flutter/services.dart';
 import 'package:basispaysdk/basispaysdk.dart';
 
@@ -20,13 +19,13 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> initPlatformState() async {
-    Map<String, dynamic> paymentRequestDictionary = {
-      "orderId": "8349574023489",
+    Map<String, dynamic>? paymentRequestDictionary = {
+      "orderId": "8273467924376",
       "amount": "6000",
       "currency": "INR",
       "description": "YYYYYY",
       "name": "XXXXXXX",
-      "email": "YYYYYYY",
+      "email": "XXXXXX",
       "phone": "ZZZZZZZZ",
       "addressLine1": "XXXXX",
       "addressLine2": "XXXXX",
@@ -40,11 +39,12 @@ class _MyAppState extends State<MyApp> {
       "udf4": "Testing4",
       "udf5": "Testing5",
     };
+
     try {
       var response = Basispaysdk.startTransaction(
-          "79e111fb-098d-4730-8c3a-17fe0c30738a",
-          "69ecafcf78912a3f57a00f0e78ea4194efcd7d24",
-          "http://167.71.235.104:8080/cinchfuel/order/pgreturn",
+          "[API-KEY From Basispay team]",
+          "[SALT-KEY From Basispay team]",
+          "[YOUR- RETURN URL to get the response]",
           true,
           paymentRequestDictionary);
       response.then((value) {
@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
       }).catchError((onError) {
         if (onError is PlatformException) {
           setState(() {
-            print(onError.message + " \n  " + onError.details.toString());
+            print(onError.message! + " \n  " + onError.details.toString());
           });
         } else {
           setState(() {
@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
         }
       });
     } catch (err) {
-      print(err.message);
+      print(err.toString());
     }
   }
 
