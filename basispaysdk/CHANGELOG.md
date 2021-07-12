@@ -13,3 +13,7 @@
  ## 1.0.3
     
   * Update: NullSafety feature changes has been done.
+  
+ ## 1.0.4
+      
+  * Update: Android module has been changed.

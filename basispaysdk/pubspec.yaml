@@ -1,6 +1,6 @@
 name: basispaysdk
 description: Flutter SDK kit for payment gateway transactions within India
-version: 1.0.3
+version: 1.0.4
 author: "Basis Pay <basispay@gmail.com>"
 homepage: "https://github.com/Baabujiventuress/fluttersdk"
 
