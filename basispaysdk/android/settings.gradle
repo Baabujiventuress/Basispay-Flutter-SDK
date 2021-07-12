@@ -1,2 +1,2 @@
-include ':app', ':PGSDKVR4'
+include ':app'
 rootProject.name = 'basispaysdk'

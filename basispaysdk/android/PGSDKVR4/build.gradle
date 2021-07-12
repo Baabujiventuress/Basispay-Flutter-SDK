@@ -1,4 +1,0 @@
-package android.PGSDKVR4
-
-configurations.maybeCreate("default")
-artifacts.add("default", file('PGSDKVR4.aar'))

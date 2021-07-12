@@ -5,9 +5,9 @@ import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.annotation.NonNull
-import com.test.pg.secure.pgsdkv4.PGConstants
-import com.test.pg.secure.pgsdkv4.PaymentGatewayPaymentInitializer
-import com.test.pg.secure.pgsdkv4.PaymentParams
+import com.example.paymentgateway.PGConstants
+import com.example.paymentgateway.PaymentGatewayPaymentInitializer
+import com.example.paymentgateway.PaymentParams
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
