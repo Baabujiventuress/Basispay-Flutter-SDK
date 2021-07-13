@@ -15,6 +15,22 @@ o Android min SDK - 21
 ## First of all get Credentials from BasisPay
 Plugin will only work with API Keys 
 
+# BasisPay-Flutter-KIT
+A Flutter plugin to use the BasisPay Payment gateway kit for accepting online payments in Flutter app.
+
+
+## INTRODUCTION
+This document describes the steps for integrating Basispay online payment gateway Flutter SDK kit.This payment gateway performs the online payment transactions with less user effort. It receives the payment details as input and handles the payment flow. Finally returns the payment response to the user. User has to import the framework manually into their project for using it
+
+## Requirements
+o iOS 11.0+
+o Xcode 11.0+ 
+o Swift 5.0+
+o Android min SDK - 21
+
+## First of all get Credentials from BasisPay
+Plugin will only work with API Keys 
+
 ##ANDROID
 STEP 1:
 Go to your android folder in your app and go into build.gradle file
