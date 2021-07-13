@@ -16,7 +16,7 @@ o Android min SDK - 21
 Plugin will only work with API Keys 
 
 ##ANDROID
-#STEP 1:
+STEP 1:
 Go to your android folder in your app and go into build.gradle file
 ```
   allprojects {
@@ -26,7 +26,7 @@ Go to your android folder in your app and go into build.gradle file
   		}
   	}
   ``` 
-#STEP 2:
+STEP 2:
 Go to your android/app/src/main/res/values and android/app/src/main/res/values-night create a file named colors.xml in both folder
 ```
   <?xml version="1.0" encoding="utf-8"?>
