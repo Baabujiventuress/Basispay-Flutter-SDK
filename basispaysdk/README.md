@@ -15,7 +15,27 @@ o Android min SDK - 21
 ## First of all get Credentials from BasisPay
 Plugin will only work with API Keys 
 
-
+##ANDROID
+#STEP 1:
+Go to your android folder in your app and go into build.gradle file
+```
+  allprojects {
+  		repositories {
+  			...
+  			maven { url 'https://jitpack.io' }
+  		}
+  	}
+  ``` 
+#STEP 2:
+Go to your android/app/src/main/res/values and android/app/src/main/res/values-night create a file named colors.xml in both folder
+```
+  <?xml version="1.0" encoding="utf-8"?>
+  <resources>
+      <color name="colorPrimary">#3F51B5</color>
+      <color name="colorPrimaryDark">#303F9F</color>
+      <color name="colorAccent">#FF4081</color>
+  </resources>
+  ``` 
 ## Start Payment
 ```
   Future<void> initPlatformState() async {
@@ -66,6 +86,7 @@ Plugin will only work with API Keys
     }
   
   ``` 
+
 ## Author
 
 BasisPay, basispay@gmail.com
