@@ -17,3 +17,7 @@
  ## 1.0.4
       
   * Update: Android module has been changed.
+  
+ ## 1.0.5
+       
+  * Update: Android module repository has been changed.
