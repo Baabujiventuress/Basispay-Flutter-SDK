@@ -29,3 +29,7 @@
  ## 1.0.7
          
   * Update: Minor bug Fixes.
+  
+ ## 1.0.8
+           
+  * Update: Minor bug Fixes.
