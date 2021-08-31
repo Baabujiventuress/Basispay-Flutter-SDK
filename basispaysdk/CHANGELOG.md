@@ -21,3 +21,7 @@
  ## 1.0.5
        
   * Update: Android module repository has been changed.
+  
+ ## 1.0.6
+         
+  * Update: URL has been modified in both android and iOS.
