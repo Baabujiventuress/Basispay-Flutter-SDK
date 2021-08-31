@@ -25,3 +25,7 @@
  ## 1.0.6
          
   * Update: URL has been modified in both android and iOS.
+  
+ ## 1.0.7
+         
+  * Update: Minor bug Fixes.
