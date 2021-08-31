@@ -45,10 +45,12 @@ class BasispaysdkPlugin: FlutterPlugin, ActivityAware,MethodCallHandler, PluginR
     val arg = call.arguments as Map<*, *>?
     if (arg != null) {
       val apiKey = arg["apiKey"] as String?
+      val saltKey = arg["saltKey"] as String?
       val returnUrl = arg["returnUrl"] as String?
       val endPoint = arg["endPoint"] as Boolean?
       var mode: String? = null
       if (apiKey == null) return showToast("apikey is missing")
+      if (saltKey == null) return showToast("saltKey is missing")
       if (returnUrl == null) return showToast("returnUrl is missing")
       if (endPoint == null) return showToast("endPoint is missing")
 
@@ -97,6 +99,7 @@ class BasispaysdkPlugin: FlutterPlugin, ActivityAware,MethodCallHandler, PluginR
       if (udf5 == null) return showToast("udf5 is missing")
       val pgPaymentParams = PaymentParams()
       pgPaymentParams.setAPiKey(apiKey);
+      pgPaymentParams.setSaltKey(saltKey);
       pgPaymentParams.setAmount(amount);
       pgPaymentParams.setEmail(email);
       pgPaymentParams.setName(name);
