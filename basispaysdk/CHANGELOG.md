@@ -33,3 +33,7 @@
  ## 1.0.8
            
   * Update: Minor bug Fixes.
+
+ ## 1.0.9
+
+  * Update: Enabled PG SplitEnforceStrict.

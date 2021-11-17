@@ -120,8 +120,9 @@ class BasispaysdkPlugin: FlutterPlugin, ActivityAware,MethodCallHandler, PluginR
       pgPaymentParams.setUdf3(udf3);
       pgPaymentParams.setUdf4(udf4);
       pgPaymentParams.setUdf5(udf5);
-      val pgPaymentInitialzer = PaymentGatewayPaymentInitializer(pgPaymentParams, activity)
-      pgPaymentInitialzer.initiatePaymentProcess()
+      pgPaymentParams.setSplitEnforceStrict("y");
+      val pgPaymentInitializer = PaymentGatewayPaymentInitializer(pgPaymentParams, activity)
+      pgPaymentInitializer.initiatePaymentProcess()
     }
 
   }
