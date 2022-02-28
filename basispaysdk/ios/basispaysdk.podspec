@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'basispaysdk'
-  s.version          = '0.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'Payment gateway Flutter Plugin by Basispay team'
   s.description      = <<-DESC
 Flutter SDK kit for payment gateway transactions within India
                        DESC
-   s.homepage         = 'https://github.com/Baabujiventuress/fluttersdk'
+   s.homepage         = 'https://github.com/Baabujiventuress/Basispay-Flutter-SDK'
        s.license          = { :file => '../LICENSE' }
-       s.author           = { 'Your Company' => 'email@example.com' }
+       s.author           = { 'Baabujiventuress' => 'basispay@gmail.com' }
        s.source           = { :path => '.' }
 
        s.source_files = 'Classes/**/*'

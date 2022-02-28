@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BasisPay-Swift.h</key>
 		<data>
-		+VzHJBXFqOqCnybJB68VGJtaqVM=
+		oQ/LSzBy1rlnSTkeVLq7LmPTUeM=
 		</data>
 		<key>Headers/BasisPay.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rjJnx6tpk9/5BjZX6/arF6F8uds=
+		3PRYox8DmqR61nN2nkS6dZNdvf0=
 		</data>
 		<key>Modules/BasisPay.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		8krisislHad2kI9Isb1xJMvB37o=
+		zlAE3GEm8y3WWjbKje9civuPQOk=
 		</data>
 		<key>Modules/BasisPay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UigCYv0gRqhBXEaB8WZvJf75P+Y=
+		sdv8YPQauEBNmutgh1HyKTCbX3g=
 		</data>
 		<key>Modules/BasisPay.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		AZa0hBfbp3+MHO/x0umWHMs7NuE=
+		YuBU+O8VUVZ1P57Gm26EQIPPGdU=
 		</data>
 		<key>Modules/BasisPay.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		8krisislHad2kI9Isb1xJMvB37o=
+		zlAE3GEm8y3WWjbKje9civuPQOk=
 		</data>
 		<key>Modules/BasisPay.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		UigCYv0gRqhBXEaB8WZvJf75P+Y=
+		sdv8YPQauEBNmutgh1HyKTCbX3g=
 		</data>
 		<key>Modules/BasisPay.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		AZa0hBfbp3+MHO/x0umWHMs7NuE=
+		YuBU+O8VUVZ1P57Gm26EQIPPGdU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,21 +46,16 @@
 		</data>
 		<key>PaymentGatewayViewController.nib</key>
 		<data>
-		nvOWy9aKKgqTiCiMpU6+LGONd0Q=
+		Ydvuom5NrdvPQU5b34S0ccLzPdA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/WebKit.framework/Versions/Current</key>
-		<dict>
-			<key>symlink</key>
-			<string>A</string>
-		</dict>
 		<key>Headers/BasisPay-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t/Xbn65ZiUNy9ZHuotc7WPjkgLq7PsyPaZevl4tt37s=
+			YRiBE6qW7OTKHZgtpDiceOEy1M2SqhSXN6ESB8TOj4s=
 			</data>
 		</dict>
 		<key>Headers/BasisPay.h</key>
@@ -74,42 +69,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mygdiEMDrVpFTMvDVHNiXra1NEUlWh8bglWyAa75xlY=
+			vTqf16SFxhud0WpcS6ZuwBfosumgKeunDKhvv5SMZ+Q=
 			</data>
 		</dict>
 		<key>Modules/BasisPay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			21Tf+nQCpjwBA1fiz2uk/xz358vM0bTf+XazjOBPDiM=
+			pXjBuFbbrOeNGOEAN0oSLGkBJvIzm5HMbZ8Ya6/Uq7o=
 			</data>
 		</dict>
 		<key>Modules/BasisPay.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ETeyqyVIL0cvuhG6exrgvAHgEPBRo/f5JxYQUfBfqtI=
+			0461mgkYGsEESpn60vDw46slPQsTefvv1egqcoTcMd8=
 			</data>
 		</dict>
 		<key>Modules/BasisPay.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mygdiEMDrVpFTMvDVHNiXra1NEUlWh8bglWyAa75xlY=
+			vTqf16SFxhud0WpcS6ZuwBfosumgKeunDKhvv5SMZ+Q=
 			</data>
 		</dict>
 		<key>Modules/BasisPay.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			21Tf+nQCpjwBA1fiz2uk/xz358vM0bTf+XazjOBPDiM=
+			pXjBuFbbrOeNGOEAN0oSLGkBJvIzm5HMbZ8Ya6/Uq7o=
 			</data>
 		</dict>
 		<key>Modules/BasisPay.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ETeyqyVIL0cvuhG6exrgvAHgEPBRo/f5JxYQUfBfqtI=
+			0461mgkYGsEESpn60vDw46slPQsTefvv1egqcoTcMd8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -123,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AD2PY7ddi3XSa5g5co7L55ut80QISXNEcmbjjx+tyQ4=
+			c6FMXYiyLVgTOiURu8EN4CwzIIdZmZNMhpDyQLxl9Sc=
 			</data>
 		</dict>
 	</dict>

@@ -20,8 +20,8 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     Map<String, dynamic>? paymentRequestDictionary = {
-      "orderId": "8273467924376",
-      "amount": "6000",
+      "orderId": "82734679243453",
+      "amount": "200",
       "currency": "INR",
       "description": "YYYYYY",
       "name": "XXXXXXX",
@@ -42,9 +42,9 @@ class _MyAppState extends State<MyApp> {
 
     try {
       var response = Basispaysdk.startTransaction(
-          "[API-KEY From Basispay team]",
-          "[SALT-KEY From Basispay team]",
-          "[YOUR- RETURN URL to get the response]",
+          "[API-KEY From Basispay team]", //[API-KEY From Basispay team]
+          "[SALT-KEY From Basispay team]", //[SALT-KEY From Basispay team]
+          "[YOUR- RETURN URL to get the response]", //[YOUR- RETURN URL to get the response]
           true,
           paymentRequestDictionary);
       response.then((value) {

@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BasisPay
 @_exported import BasisPay
 import Foundation
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 public protocol PaymentGatewayDelegate {
   func onPaymentSucess(response: BasisPay.BasisPaymentResponse)
   func onPaymentFailure(response: BasisPay.BasisPaymentResponse)
@@ -13,29 +14,28 @@ public protocol PaymentGatewayDelegate {
 public enum UrlEndpoint : Swift.String {
   case Live
   case Testing
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-@objc open class PaymentGatewayController : UIKit.UIViewController {
-  @objc open var isResponseDataAvailable: Swift.Bool
-  public var paymentDefaults: BasisPay.PaymentDefaults!
-  public var delegate: BasisPay.PaymentGatewayDelegate?
+@objc @_Concurrency.MainActor(unsafe) open class PaymentGatewayController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) open var isResponseDataAvailable: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var paymentDefaults: BasisPay.PaymentDefaults!
+  @_Concurrency.MainActor(unsafe) public var delegate: BasisPay.PaymentGatewayDelegate?
   @objc dynamic public init()
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc override dynamic open func viewDidLoad()
-  @objc override dynamic open func didReceiveMemoryWarning()
-  @objc open func setInputDictionary(inputDictionary: Foundation.NSDictionary)
-  @objc open func isResponseAvailable() -> Swift.Bool
-  @objc open func getResponseData() -> Foundation.NSDictionary
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didReceiveMemoryWarning()
+  @objc @_Concurrency.MainActor(unsafe) open func setInputDictionary(inputDictionary: Foundation.NSDictionary)
+  @objc @_Concurrency.MainActor(unsafe) open func isResponseAvailable() -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open func getResponseData() -> Foundation.NSDictionary
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
-extension PaymentGatewayController : WebKit.WKNavigationDelegate {
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+extension BasisPay.PaymentGatewayController : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
 }
 public struct PaymentDefaults {
   public var apiKey: Swift.String!
