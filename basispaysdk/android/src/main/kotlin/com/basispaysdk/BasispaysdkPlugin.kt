@@ -48,7 +48,7 @@ class BasispaysdkPlugin: FlutterPlugin, ActivityAware,MethodCallHandler, PluginR
       val saltKey = arg["saltKey"] as String?
       val returnUrl = arg["returnUrl"] as String?
       val endPoint = arg["endPoint"] as Boolean?
-      var mode: String? = null
+      var mode: String?
       if (apiKey == null) return showToast("apikey is missing")
       if (saltKey == null) return showToast("saltKey is missing")
       if (returnUrl == null) return showToast("returnUrl is missing")
@@ -61,8 +61,8 @@ class BasispaysdkPlugin: FlutterPlugin, ActivityAware,MethodCallHandler, PluginR
       }
       val payDict = arg["payDict"] as Map<*, *>?
       if (payDict == null) return showToast("payDict is missing")
-      val orderId = payDict!!["orderId"] as String?
-      val amount = payDict!!["amount"] as String?
+      val orderId = payDict["orderId"] as String?
+      val amount = payDict["amount"] as String?
       val currency = payDict["currency"] as String?
       val description = payDict["description"] as String?
       val name = payDict["name"] as String?

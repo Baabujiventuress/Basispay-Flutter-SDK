@@ -41,3 +41,6 @@
  ## 1.1.0
 
   * Update: Minor bug fixes.
+
+## 1.1.1
+* Update: Minor bug fixes.
