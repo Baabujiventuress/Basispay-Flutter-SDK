@@ -46,5 +46,4 @@
 * Update: Minor bug fixes.
 
 ## 1.1.2
-* Update: Minor bugs fixes.
-
+* Update: Minor bug fixes.
